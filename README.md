@@ -1,104 +1,97 @@
-# 🏨 QuickStay – Modern Hotel Booking Platform  
+QuickStay – Next-Gen Hotel Booking Platform
 
-**Discover, Book, and Manage Stays with Ease**  
+QuickStay is a full-stack hotel booking solution built with the MERN stack.
+It provides travelers with a smooth booking experience and empowers hotel owners with modern property management tools. With secure payments, real-time availability, and a responsive design, QuickStay is designed to mimic production-ready travel platforms.
 
-QuickStay is a **full-featured hotel booking platform** built with the MERN stack, offering seamless booking experiences for travelers and powerful management tools for hotel owners. With secure payments, real-time availability, and beautiful dashboards, it's designed to be a **production-ready** solution.  
+✨ Core Highlights
+👤 For Travelers
 
-🚀 **[Live Demo](https://quickstay-three-self.vercel.app/)**
+🔍 Hotel Discovery – Browse rich listings with images, descriptions, and amenities
 
----
+📅 Live Availability – Real-time room availability and instant booking confirmation
 
-## ✨ **Key Features**  
+💳 Secure Payments – Stripe integration ensures safe and fast checkouts
 
-### **For Travelers**  
-🔍 **Browse Hotels** – Stunning listings with high-res images  
-📅 **Real-Time Availability** – Instant booking confirmation  
-💳 **Secure Checkout** – Powered by Stripe  
-📧 **Booking Confirmations** – Delivered via Brevo  
-📱 **Mobile-Friendly** – Book on any device  
+📧 Email Notifications – Automated booking confirmation via Brevo
 
-### **For Hotel Owners**  
-🏢 **Property Management** – Add & update rooms effortlessly  
-📊 **Revenue Dashboard** – Track bookings & earnings  
-🔄 **Instant Updates** – Sync availability in real-time  
-📸 **Cloudinary Integration** – Upload property photos easily  
+📱 Responsive Experience – Optimized for mobile, tablet, and desktop
 
-### **Tech Highlights**  
-⚡ **Blazing Fast** – Vite + React optimized for performance  
-🛡️ **Secure Auth** – Clerk-powered authentication  
-📈 **Analytics** – Vercel Insights for performance tracking  
-🌐 **Responsive UI** – TailwindCSS for a sleek experience  
+🏢 For Hotel Owners
 
----
+🏨 Property Management – Easily add, edit, and remove rooms/properties
 
-## 🛠️ **Tech Stack**  
+📊 Revenue Dashboard – Visualize earnings and booking trends at a glance
 
-| **Category**       | **Technologies**                         |
-|--------------------|------------------------------------------|
-| **Frontend**       | React (Vite), TailwindCSS                |
-| **Backend**        | Node.js, Express.js                      |
-| **Database**       | MongoDB (Mongoose ODM)                   |
-| **Authentication** | Clerk                                    |
-| **Payments**       | Stripe                               |
-| **Emails**         | Brevo (Sendinblue)                       |
-| **Media Storage**  | Cloudinary                               |
-| **Hosting**        | Vercel (Serverless)                      |
-| **Monitoring**     | Vercel Analytics & Speed Insights        |
+🔄 Instant Updates – Manage availability and sync changes in real time
 
----
+📸 Photo Hosting – Upload and manage images seamlessly with Cloudinary
 
-## 📸 **Sneak Peek**  
+🛠 Tech Stack
+Category	Technologies
+Frontend	React (Vite), TailwindCSS
+Backend	Node.js, Express.js
+Database	MongoDB + Mongoose
+Authentication	Clerk
+Payments	Stripe
+Emails	Brevo (Sendinblue)
+Media Storage	Cloudinary
+Hosting	Vercel (Frontend + Serverless Backend)
+Monitoring	Vercel Analytics, Speed Insights
+📸 Screenshots
+🏠 Homepage – Explore Hotels
+<p align="center"> <img src="./client/screenshots/1.png" width="700" alt="Homepage"/> </p>
+🛏️ Room Booking – Simple & Secure
+<p align="center"> <img src="./client/screenshots/2.png" width="700" alt="Hotels"/> </p>
+📊 Owner Dashboard – Control Panel
+<p align="center"> <img src="./client/screenshots/3.png" width="700" alt="Dashboard"/> </p>
+📖 Booking History – Stay Organized
+<p align="center"> <img src="./client/screenshots/4.png" width="700" alt="Booking History"/> </p>
+🚀 Why QuickStay?
 
-<h3><strong>Homepage – Find Your Perfect Stay</strong></h3>  
-<p align="center">
-  <img src="./client/screenshots/1.png" width="700" alt="Homepage"/>
-</p>
+✅ Real SaaS-like experience – mimics production travel apps
 
-<h3><strong>Book Rooms – Secure & Simple</strong></h3>  
-<p align="center">
-  <img src="./client/screenshots/2.png" width="700" alt="Hotels"/>
-</p>
+✅ End-to-end architecture – from frontend to payments to analytics
 
-<h3><strong>Owner Dashboard – Manage Your Business</strong></h3>  
-<p align="center">
-  <img src="./client/screenshots/3.png" width="700" alt="Dashboard"/>
-</p>
+✅ Secure by design – Auth (Clerk) + Payments (Stripe) + Cloud storage
 
-<h3><strong>User Booking History</strong></h3>  
-<p align="center">
-  <img src="./client/screenshots/4.png" width="700" alt="Booking History"/>
-</p>
+✅ Scalable backend – Built with Express and MongoDB for flexibility
 
+✅ Beautiful UI/UX – Responsive TailwindCSS design with modern workflows
 
----
+⚡ Getting Started
 
-## 🚀 **Why QuickStay?**  
+Clone the repo and install dependencies:
 
-This project demonstrates:  
-✅ **End-to-end SaaS architecture**  
-✅ **Production-grade payment flows**  
-✅ **Dynamic dashboards with real-time data**  
-✅ **Optimized media handling**  
-✅ **Scalable backend design**  
+# Clone repository
+git clone https://github.com/your-username/Hotel_Booking_Webapp.git
+cd Hotel_Booking_Webapp
 
----
+🔧 Setup
+# Client setup
+cd client
+npm install
+npm run dev
 
-## ⚠️ **Disclaimer**  
+# Server setup
+cd ../server
+npm install
+npm run dev
 
-This is a **portfolio project** for educational purposes only. No real transactions or bookings are processed.  
+🔑 Environment Variables
 
+Create a .env file for both client and server with:
 
-## 📬 **Connect & Contribute**  
+MONGODB_URI – MongoDB connection string
 
-🔹 **Found a bug?** Open an issue!  
-🔹 **Want to improve something?** Submit a PR!  
-🔹 **Need help?** Reach out via GitHub discussions.  
+CLERK_SECRET_KEY – Clerk authentication key
 
----
+STRIPE_SECRET_KEY – Stripe private key
 
-⭐ **Love this project? Give it a star!** ⭐  
+BREVO_API_KEY – For email notifications
 
----
+CLOUDINARY_URL – For media uploads
 
-### 🏆 **Built with Passion, Shared with the Community**  
-*"Travel should be easy. Booking should be effortless."* 
+⚠️ Disclaimer
+
+This is a portfolio project created for educational and demonstration purposes.
+It does not process real payments or bookings
